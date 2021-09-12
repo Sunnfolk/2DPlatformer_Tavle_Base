@@ -737,7 +737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6478990032725726176, guid: 31be716c02d9043ecaf513d6d60b7214, type: 3}
       propertyPath: jumpForce
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6478990032725726176, guid: 31be716c02d9043ecaf513d6d60b7214, type: 3}
       propertyPath: coyoteTime

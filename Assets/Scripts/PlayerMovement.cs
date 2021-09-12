@@ -35,8 +35,20 @@ public class PlayerMovement : MonoBehaviour
         LongJump();
         DownDash();
         SetMaxVelocity();
+        
+        Coyote();
 
-
+        if (_Input.jump)
+        {
+            if (!canCoyote) return;
+                isJumping = true;
+                jumpTimeCounter = jumpTime;
+                _Rigidbody2D.velocity = new Vector2(_Rigidbody2D.velocity.x, jumpForce);
+        }
+    }
+    
+    private void Coyote()
+    {
         if (IsGrounded())
         {
             canCoyote = true;
@@ -54,14 +66,6 @@ public class PlayerMovement : MonoBehaviour
         if (coyoteTimeCounter < 0)
         {
             canCoyote = false;
-        }
-
-        if (_Input.jump)
-        {
-            if (!canCoyote) return;
-                isJumping = true;
-                jumpTimeCounter = jumpTime;
-                _Rigidbody2D.velocity = new Vector2(_Rigidbody2D.velocity.x, jumpForce);
         }
     }
 
