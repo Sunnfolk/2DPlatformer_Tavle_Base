@@ -37,6 +37,33 @@ public class PlayerMovement : MonoBehaviour
         SetMaxVelocity();
 
 
+        CoyoteTime();
+
+        if (_Input.jump)
+        {
+            Jump();
+        }
+    }
+    
+    private void FixedUpdate()
+    {
+        _Rigidbody2D.velocity = 
+            new Vector2(_Input.moveVector.x * moveSpeed, _Rigidbody2D.velocity.y);
+    }
+
+
+    private void Jump()
+    {
+        if (!canCoyote) return;
+        isJumping = true;
+        jumpTimeCounter = jumpTime;
+        _Rigidbody2D.velocity = new Vector2(_Rigidbody2D.velocity.x, jumpForce);
+    }
+
+   
+
+    private void CoyoteTime()
+    {
         if (IsGrounded())
         {
             canCoyote = true;
@@ -54,14 +81,6 @@ public class PlayerMovement : MonoBehaviour
         if (coyoteTimeCounter < 0)
         {
             canCoyote = false;
-        }
-
-        if (_Input.jump)
-        {
-            if (!canCoyote) return;
-                isJumping = true;
-                jumpTimeCounter = jumpTime;
-                _Rigidbody2D.velocity = new Vector2(_Rigidbody2D.velocity.x, jumpForce);
         }
     }
 
@@ -86,12 +105,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     
-    private void FixedUpdate()
-    {
-        _Rigidbody2D.velocity = 
-            new Vector2(_Input.moveVector.x * moveSpeed, _Rigidbody2D.velocity.y);
-    }
-    
+  
     private void DownDash()
     {
         if (_Input.downDash)
