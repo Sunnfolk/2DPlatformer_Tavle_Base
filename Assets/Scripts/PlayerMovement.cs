@@ -32,6 +32,16 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        if ((_Input.moveVector.x == 0 && _Input.moveVector.y == 0) && IsGrounded())
+        {
+            _Rigidbody2D.velocity = new Vector2(0f, 0f);
+            _Rigidbody2D.gravityScale = 0f;
+        }
+        else
+        {
+            _Rigidbody2D.gravityScale = 3f;
+        }
+
         LongJump();
         DownDash();
         SetMaxVelocity();
