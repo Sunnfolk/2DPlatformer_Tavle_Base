@@ -1,28 +1,40 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    private Animator m_Animator;
-    private PlayerInput m_Input;
-    
+    private Animator _animator;
+    private PlayerInput _input;
+    private PlayerMovement _movement;
+    private PlayerCollision _collision;
+    private Rigidbody2D _rigidbody2D;
+
+    private static readonly int Run = Animator.StringToHash("Run");
+    private static readonly int Idle = Animator.StringToHash("Idle");
+    private static readonly int Jump = Animator.StringToHash("Jump");
+    private static readonly int Fall = Animator.StringToHash("Fall");
+
     private void Start()
     {
-        m_Animator = GetComponent<Animator>();
-        m_Input = GetComponent<PlayerInput>();
+        _animator = GetComponent<Animator>();
+        _input = GetComponent<PlayerInput>();
+        _collision = GetComponent<PlayerCollision>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        if (m_Input.moveVector.x != 0)
+        if (_input.moveVector.x != 0)
         {
-            m_Animator.Play("Player_Run");
-            transform.localScale = new Vector2(m_Input.moveVector.x * 1f, 1f);
+            transform.localScale = new Vector2(_input.moveVector.x * 1f, 1f);
+        }
+        
+        if (_collision.IsGrounded())
+        {
+            _animator.Play(_input.moveVector.x != 0 ? Run : Idle);
         }
         else
         {
-            m_Animator.Play("Player_Idle");
+            _animator.Play(_rigidbody2D.velocity.y > 0 ? Jump : Fall);
         }
     }
 }
