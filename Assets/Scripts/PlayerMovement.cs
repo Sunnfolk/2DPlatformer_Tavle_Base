@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     /*COYOTE TIME*/
     [SerializeField] private float coyoteTime = 0.5f;
     private float coyoteTimeCounter;
-    private bool canCoyote;
+    [HideInInspector] public bool canCoyote;
 
     private void Start()
     {
@@ -113,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         Debug.DrawRay(transform.position, Vector2.down, new Color(1f, 0f, 1f));
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.1f, whatIsGround);
