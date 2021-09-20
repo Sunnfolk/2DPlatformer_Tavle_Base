@@ -332,3 +332,21 @@ Received Import Request.
   path: Assets/Prefabs/Player.prefab
   artifactKey: Guid(31be716c02d9043ecaf513d6d60b7214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Player.prefab using Guid(31be716c02d9043ecaf513d6d60b7214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab3ac90d551ea9cfda82ad1c0ce16f3b') in 1.094157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 121.238612 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Double Jump (32x32).png
+  artifactKey: Guid(6fceed351da4745ed845b6e7bb749c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Double Jump (32x32).png using Guid(6fceed351da4745ed845b6e7bb749c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413b0f4b7132e64c0d44b18135fcee79') in 0.901029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.828489 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Idle (32x32).png
+  artifactKey: Guid(50a4437b4f8714e559bda3c895e6baba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Idle (32x32).png using Guid(50a4437b4f8714e559bda3c895e6baba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60eef96217c9cad24abb767bbc9fc8dc') in 0.013675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.647495 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Jump (32x32).png
+  artifactKey: Guid(fe6f64364bf1a42249e18d4dcc9e9973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Jump (32x32).png using Guid(fe6f64364bf1a42249e18d4dcc9e9973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d457033714e48e6108b131a64fceefc') in 0.010382 seconds 
