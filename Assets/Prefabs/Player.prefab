@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 4899583798736821900}
   - component: {fileID: 6478990032725726176}
   - component: {fileID: 6707140179176212140}
+  - component: {fileID: 7156520615853444964}
+  - component: {fileID: 572821660}
   - component: {fileID: 7156520614599976598}
   - component: {fileID: 7156520614599976601}
-  - component: {fileID: 572821660}
+  - component: {fileID: 7156520615853444963}
   - component: {fileID: 572821661}
   m_Layer: 0
   m_Name: Player
@@ -80,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -6367560908665664636, guid: 50a4437b4f8714e559bda3c895e6baba, type: 3}
-  m_Color: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -139,6 +141,36 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
+  whatIsDeath:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &7156520615853444964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7156520614599976597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11f6e1e853e142f087d63c7798037b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &572821660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7156520614599976597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 750e668d100a3044691e826f9bb33edc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump: {fileID: 8300000, guid: 775eb2c70b2993a4ebe5e35f7ea4b96a, type: 3}
+  land: {fileID: 8300000, guid: 64c2399bc44564220b7d5ea0c20930ae, type: 3}
+  walking: {fileID: 8300000, guid: 41fed19c954fe584fb259e7b1fcc6d11, type: 3}
 --- !u!50 &7156520614599976598
 Rigidbody2D:
   serializedVersion: 4
@@ -173,22 +205,28 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.045488358, y: -0.4093933}
-  m_Size: {x: 1.1812134, y: 1.1812134}
+  m_Offset: {x: 0.0072493553, y: -0.3262}
+  m_Size: {x: 1.3476, y: 1.3476}
   m_Direction: 0
---- !u!114 &572821660
-MonoBehaviour:
+--- !u!95 &7156520615853444963
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7156520614599976597}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 750e668d100a3044691e826f9bb33edc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jump: {fileID: 8300000, guid: 775eb2c70b2993a4ebe5e35f7ea4b96a, type: 3}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f77924306663a4a818ba72b48f525f06, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!82 &572821661
 AudioSource:
   m_ObjectHideFlags: 0
