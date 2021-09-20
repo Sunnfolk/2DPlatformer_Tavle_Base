@@ -3,15 +3,12 @@ using UnityEngine;
 public class PlayerAudio : MonoBehaviour
 {
     public AudioClip jump;
-    public AudioClip land;
-    public AudioClip walking;
 
     private AudioSource _audioSource;
     private PlayerInput _input;
     private PlayerMovement _movement;
     private PlayerCollision _collision;
 
-    private bool _canLand;
     
     private void Start()
     {
@@ -23,39 +20,15 @@ public class PlayerAudio : MonoBehaviour
 
     private void Update()
     {
-        JumpAudio(); 
-        LandingAudio();
+        JumpAudio();
     }
-
-    public void WalkingAudio()
-    {
-        if (_collision.IsGrounded() && _input.moveVector.x != 0)
-        {
-            _audioSource.pitch = Random.Range(0.5f, 1.5f); 
-            _audioSource.PlayOneShot(walking);                
-        }
-    }
-
+    
     private void JumpAudio()
     {
         if (_input.jump && (_movement.canCoyote || _collision.IsGrounded()))
         {
             _audioSource.pitch = Random.Range(0.5f, 1.5f);
             _audioSource.PlayOneShot(jump);
-        }
-    }
-
-    private void LandingAudio()
-    {
-        if (_collision.IsGrounded() && _canLand)
-        {
-            _audioSource.pitch = Random.Range(0.5f, 1.5f);
-            _audioSource.PlayOneShot(land);
-            _canLand = false;
-        }
-        else if (!_collision.IsGrounded())
-        {
-            _canLand = true;
         }
     }
 
