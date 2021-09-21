@@ -9,6 +9,10 @@ public class PlayerAnimations : MonoBehaviour
             // only if you have this script
             private PlayerCollision _collision;
         private Rigidbody2D _rigidbody2D;
+
+        private float timerCount;
+        public float timer;
+        private bool canCount;
     #endregion
     
     private void Start()
@@ -48,6 +52,16 @@ public class PlayerAnimations : MonoBehaviour
             {
                 _animator.Play("Fall");
             }
+        }
+    }
+
+    private void AnimationTimer()
+    {
+        timer = _animator.GetCurrentAnimatorStateInfo(0).length;
+
+        if (timer > 0)
+        {
+            timer -= 1 * Time.deltaTime;
         }
     }
 }
