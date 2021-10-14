@@ -9,6 +9,7 @@ public class EasyCheckPoint : MonoBehaviour
 
     private void Start()
     {
+        // Player Object -> _player Variable -> static player Variable
         player = _player;
         SavePlayerPosition();
     }
@@ -19,6 +20,10 @@ public class EasyCheckPoint : MonoBehaviour
         {
             ResetPlayerPosition();
         }
+        if (Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            SceneController.QuitGame();
+        }
     }
     
     private void OnTriggerEnter2D(Collider2D other)
@@ -26,12 +31,12 @@ public class EasyCheckPoint : MonoBehaviour
         SavePlayerPosition();
     }
 
-    public void ResetPlayerPosition()
+    public static void ResetPlayerPosition()
     {
         player.transform.position = _SavedPosition;
     }
 
-    private void SavePlayerPosition()
+    public static void SavePlayerPosition()
     {
         _SavedPosition = player.transform.position;
     }
