@@ -1,0 +1,269 @@
+Using pre-set license
+Pro License: NO
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.1.17f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/teacher/Documents/GitHub/2DPlatformer_Tavle_Base
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49455
+Successfully changed project path to: /Users/teacher/Documents/GitHub/2DPlatformer_Tavle_Base
+/Users/teacher/Documents/GitHub/2DPlatformer_Tavle_Base
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 139.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.17f1 (03b40fe07a36)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.1.17f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/teacher/Documents/GitHub/2DPlatformer_Tavle_Base/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+2021-10-15 10:09:28.507 Unity[1321:51418] iMac preferred device: AMD Radeon Pro Vega 56 (high power)
+2021-10-15 10:09:28.507 Unity[1321:51418] Metal devices available: 1
+2021-10-15 10:09:28.507 Unity[1321:51418] 0: AMD Radeon Pro Vega 56 (high power)
+2021-10-15 10:09:28.507 Unity[1321:51418] Forcing user selected device: AMD Radeon Pro Vega 56 (high power)
+Initializing Metal device caps: AMD Radeon Pro Vega 56
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.1.17f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.1.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.1.17f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56321
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.1.17f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.1.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.1.17f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000820 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 138.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.463 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2463ms)
+		BeginReloadAssembly (49ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (619ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (220ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (308ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (139ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003388 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/teacher/Documents/GitHub/2DPlatformer_Tavle_Base/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/teacher/Documents/GitHub/2DPlatformer_Tavle_Base/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 143.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.806 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1806ms)
+		BeginReloadAssembly (184ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1551ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (541ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (704ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (144ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (421ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.1.17f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5251 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 331.0 MB.
+System memory in use after: 331.5 MB.
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 5701.
+Total: 5.960571 ms (FindLiveObjects: 0.533901 ms CreateObjectMapping: 0.377330 ms MarkObjects: 4.959667 ms  DeleteObjects: 0.088603 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy Normals
+  artifactKey: Guid(1fe5bb4169c02402eac1276a7cbdf867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy Normals using Guid(1fe5bb4169c02402eac1276a7cbdf867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e15ba87bc2413a7fdb2e92811ccbe645') in 0.009309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.400843 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Double Jump (32x32)_NORMALS.png
+  artifactKey: Guid(6c339b7207059e14aabace92ca33da76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Double Jump (32x32)_NORMALS.png using Guid(6c339b7207059e14aabace92ca33da76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398cf11f2086bb7a42290065cb9f6418') in 1.112941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Fall (32x32)_NORMALS.png
+  artifactKey: Guid(b887ee9dc79456348a0c9de0c84fb8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Fall (32x32)_NORMALS.png using Guid(b887ee9dc79456348a0c9de0c84fb8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a82beb9cb4e5c4b4d6982d816d7b6c') in 0.006792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.021194 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Idle (32x32)_NORMALS.png
+  artifactKey: Guid(2a61e7b3124678f43a1227b8a7240fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Idle (32x32)_NORMALS.png using Guid(2a61e7b3124678f43a1227b8a7240fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f10618f22a20bbc3ad4b7a2d359309') in 0.007431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.374255 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Jump (32x32)_NORMALS.png
+  artifactKey: Guid(b9ed856bcddfd3447b8f6956af486bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Jump (32x32)_NORMALS.png using Guid(b9ed856bcddfd3447b8f6956af486bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843f3274296812d1bd82c9a7a38e97ee') in 0.007848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.397043 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Run (32x32)_NORMALS.png
+  artifactKey: Guid(75d23640d6d324e4e89bfb11c8e8dc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Run (32x32)_NORMALS.png using Guid(75d23640d6d324e4e89bfb11c8e8dc8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '652e9078bf5feb18748daa29f5fe640f') in 0.007816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.207951 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Hit (32x32)_NORMALS.png
+  artifactKey: Guid(9b0a8952908c20140bcb6ad7dd32de40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Hit (32x32)_NORMALS.png using Guid(9b0a8952908c20140bcb6ad7dd32de40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6afeac3127f0920829a249aa8f336af') in 0.006936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.581748 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Wall Jump (32x32)_NORMALS.png
+  artifactKey: Guid(714e6857c09277e4993545017f4f1897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy Normals/Wall Jump (32x32)_NORMALS.png using Guid(714e6857c09277e4993545017f4f1897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e61e7f0523dbab26441d68535385ce7') in 0.006905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.764531 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Double Jump (32x32).png
+  artifactKey: Guid(6fceed351da4745ed845b6e7bb749c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Double Jump (32x32).png using Guid(6fceed351da4745ed845b6e7bb749c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b2315829451c6302b5840a248cddc9') in 0.084034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.786694 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Fall (32x32).png
+  artifactKey: Guid(0a978b0146af04d45aa04335e05f8a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Fall (32x32).png using Guid(0a978b0146af04d45aa04335e05f8a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4badbc19aa902d6bd3b42508afa2d39d') in 0.008229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.735192 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Double Jump (32x32).png
+  artifactKey: Guid(6fceed351da4745ed845b6e7bb749c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Double Jump (32x32).png using Guid(6fceed351da4745ed845b6e7bb749c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6fd30c0ccba3f1d299e8512eb67567') in 0.011929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.759565 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Hit (32x32).png
+  artifactKey: Guid(28ee06789ebec43ab8c616fafb1f5dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Hit (32x32).png using Guid(28ee06789ebec43ab8c616fafb1f5dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '246269d8ffa13c1893bdd35e2ca02069') in 0.009219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.560714 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Fall (32x32).png
+  artifactKey: Guid(0a978b0146af04d45aa04335e05f8a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Fall (32x32).png using Guid(0a978b0146af04d45aa04335e05f8a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a461c72592f940e309f79a98767616') in 0.009514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.097258 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Hit (32x32).png
+  artifactKey: Guid(28ee06789ebec43ab8c616fafb1f5dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Hit (32x32).png using Guid(28ee06789ebec43ab8c616fafb1f5dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759154dbf8fff574e7960d1af4be0ac8') in 0.009271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.374226 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Idle (32x32).png
+  artifactKey: Guid(50a4437b4f8714e559bda3c895e6baba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Idle (32x32).png using Guid(50a4437b4f8714e559bda3c895e6baba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5409b2826d4403a7d7f1a9dc9f6cdfb9') in 0.025347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.465571 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Idle (32x32).png
+  artifactKey: Guid(50a4437b4f8714e559bda3c895e6baba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Idle (32x32).png using Guid(50a4437b4f8714e559bda3c895e6baba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9cd0368ae97988c9322498b55285e5f') in 0.029659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.176013 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Jump (32x32).png
+  artifactKey: Guid(fe6f64364bf1a42249e18d4dcc9e9973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Jump (32x32).png using Guid(fe6f64364bf1a42249e18d4dcc9e9973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64686be679e58f6db074bf504429f806') in 0.007667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.401848 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Jump (32x32).png
+  artifactKey: Guid(fe6f64364bf1a42249e18d4dcc9e9973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Jump (32x32).png using Guid(fe6f64364bf1a42249e18d4dcc9e9973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94a875e14aff516a9c5682b4b79ffd4c') in 0.011416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.391801 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Run (32x32).png
+  artifactKey: Guid(9b06f7cdc5c914cafaac6828fac66377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Run (32x32).png using Guid(9b06f7cdc5c914cafaac6828fac66377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618d16cac8445daa37ac428cd20cb831') in 0.031324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.100002 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Run (32x32).png
+  artifactKey: Guid(9b06f7cdc5c914cafaac6828fac66377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Run (32x32).png using Guid(9b06f7cdc5c914cafaac6828fac66377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94529c07c5af3c1194ad7a0c8a5a7c2b') in 0.028544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.281333 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Wall Jump (32x32).png
+  artifactKey: Guid(1329d606358234caaacaa8acb5e21235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Wall Jump (32x32).png using Guid(1329d606358234caaacaa8acb5e21235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016971ea560554d7f007030a651d05d1') in 0.008637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.380823 seconds.
+  path: Assets/Resources/Sprites/Main Characters/Virtual Guy/Wall Jump (32x32).png
+  artifactKey: Guid(1329d606358234caaacaa8acb5e21235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Main Characters/Virtual Guy/Wall Jump (32x32).png using Guid(1329d606358234caaacaa8acb5e21235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7310676dc47635e77feaea057539fee4') in 0.009716 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
