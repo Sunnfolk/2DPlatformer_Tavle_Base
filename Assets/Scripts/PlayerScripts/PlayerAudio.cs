@@ -1,3 +1,4 @@
+using PlayerScripts;
 using UnityEngine;
 
 public class PlayerAudio : MonoBehaviour
@@ -32,6 +33,7 @@ public class PlayerAudio : MonoBehaviour
     {
         _audioSource.pitch = Random.Range(0.5f, 1.5f);
         _audioSource.PlayOneShot(walking);
+        PlayerParticles.CreateDust();
     }
 
     private void LandingAudio()
@@ -40,6 +42,8 @@ public class PlayerAudio : MonoBehaviour
         {
             _audioSource.pitch = Random.Range(0.5f, 1.5f);
             _audioSource.PlayOneShot(land);
+
+            PlayerParticles.CreateDust();
             _canLand = false;
         }
         else if (!_collision.IsGrounded())

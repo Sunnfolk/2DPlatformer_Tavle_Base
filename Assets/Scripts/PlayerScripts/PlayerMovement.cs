@@ -1,3 +1,4 @@
+using PlayerScripts;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerInput))]
@@ -60,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
             _isJumping = true;
             _jumpTimeCounter = jumpTime;
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpForce);
+            PlayerParticles.CreateDust();
         }
     }
     

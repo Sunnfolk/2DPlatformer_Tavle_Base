@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerInput : MonoBehaviour
+public partial class PlayerInput : MonoBehaviour
 {
     [HideInInspector] public Vector2 moveVector;
     [HideInInspector] public bool jump;

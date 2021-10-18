@@ -14,7 +14,9 @@ public class PlayerAnimations : MonoBehaviour
         public float timer;
         private bool canCount;
     #endregion
-    
+
+    public string test = "NO_Hello";
+
     private void Start()
     {
         _animator = GetComponent<Animator>();
@@ -22,10 +24,16 @@ public class PlayerAnimations : MonoBehaviour
             _collision = GetComponent<PlayerCollision>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _movement = GetComponent<PlayerMovement>();
+        
+        //TODO: Use this code to set up a Save system and eliminate all Object Save Files in Player PRefs
+        print(test.StartsWith("NO") ? "Starts with NO" : "Does not Start with NO");
+
     }
     
     private void Update()
     {
+        print(test.StartsWith("NO") ? "Starts with NO" : "Does not Start with NO");
+
         if (_input.moveVector.x != 0)
         {
             transform.localScale = new Vector2(_input.moveVector.x, 1f);
