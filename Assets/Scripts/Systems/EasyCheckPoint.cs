@@ -26,7 +26,7 @@ public class EasyCheckPoint : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         SavePlayerPosition();
-        PlayerParticles.CreateConfetti();
+        //PlayerParticles.CreateConfetti();
     }
 
     public void ResetPlayerPosition()
