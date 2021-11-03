@@ -26,7 +26,7 @@
                 {
                     "name": "WASD",
                     "id": "63033a18-1e31-4a0c-bab7-588ef75f42e3",
-                    "path": "2DVector",
+                    "path": "2DVector(mode=1)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -92,7 +92,7 @@
                 {
                     "name": "D-Pad",
                     "id": "4f20896e-c393-4b7b-bb8c-51bb55f55e9d",
-                    "path": "2DVector",
+                    "path": "2DVector(mode=1)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

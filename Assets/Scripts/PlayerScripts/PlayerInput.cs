@@ -9,10 +9,14 @@ public class PlayerInput : MonoBehaviour
     [HideInInspector] public float longJump;
     [HideInInspector] public bool downDash;
 
+    #region Input Actions
     private PlayerInputActions _input;
-
     private void Awake() { _input = new PlayerInputActions(); }
-
+    private void OnEnable() { _input.Enable(); }
+    private void OnDisable() { _input.Disable(); }
+    #endregion
+    
+    
     private void Update()
     {
         moveVector = _input.Player.Move.ReadValue<Vector2>();
@@ -22,6 +26,5 @@ public class PlayerInput : MonoBehaviour
         downDash = Keyboard.current.sKey.wasPressedThisFrame;
     }
 
-    private void OnEnable() { _input.Enable(); }
-    private void OnDisable() { _input.Disable(); }
+
 }

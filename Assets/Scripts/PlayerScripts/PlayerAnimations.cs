@@ -29,7 +29,7 @@ public class PlayerAnimations : MonoBehaviour
     {
         if (_input.moveVector.x != 0)
         {
-            transform.localScale = new Vector2(Math.Sign(_input.moveVector.x), 1f);
+            transform.localScale = new Vector2(Mathf.Sign(_input.moveVector.x), 1f);
         }
         
         if (_collision.IsGrounded())
