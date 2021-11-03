@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
     
     private void LongJump()
     {
-        if (_input.longJump && _isJumping)
+        if (_input.longJump > 0f && _isJumping)
         {
             if (_jumpTimeCounter > 0)
             {
@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (!_input.longJump)
+        if (_input.longJump < 1f)
         {
             _isJumping = false;
         }
